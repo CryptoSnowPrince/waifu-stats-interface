@@ -8,7 +8,6 @@
     "build-upload": "razzle build --noninteractive && tar -zcvf build.tar.gz build && scp build.tar.gz do2:~/www/gmx-stats",
     "test": "razzle test --env=jsdom",
     "start": "razzle start",
-    "start-win": "set PORT=3113&razzle start",
     "start:prod": "node build/server.js",
     "lint": "eslint $(git ls-files -m | grep -E \".js$\")",
     "pre-commit": "npm run lint"
